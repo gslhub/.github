@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security and sensitive reports
+    url: https://github.com/gslhub/.github/blob/main/SECURITY.md
+    about: Use the private reporting instructions in our security policy instead of opening a public issue.
+  - name: GSLHub website
+    url: https://gslhub.com
+    about: Visit the public research platform and project information.
