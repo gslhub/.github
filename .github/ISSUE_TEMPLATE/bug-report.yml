@@ -1,0 +1,57 @@
+name: Bug report
+description: Report a reproducible problem in GSLHub software or research infrastructure.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve GSLHub. Do not include credentials, private data or sensitive research material in a public issue.
+  - type: input
+    id: repository
+    attributes:
+      label: Repository or component
+      description: Which repository, page or component is affected?
+      placeholder: gslhub/website, CMS admin, dashboard, API, etc.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what happened and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable sequence that reproduces the issue.
+      placeholder: |
+        1. Go to ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant browser, runtime, operating system, deployment or version details.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Additional evidence
+      description: Add safe logs, screenshots or links if useful. Remove secrets and personal information first.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety check
+      options:
+        - label: I have removed credentials, private data and sensitive research information from this report.
+          required: true
+        - label: This is not a security vulnerability requiring private disclosure.
+          required: true
