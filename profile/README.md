@@ -12,7 +12,7 @@
 
 **Barcelona, Spain · Open research · Open-source infrastructure**
 
-[Website](https://gslhub.com) · [Source code](https://github.com/gslhub/website) · [Research](https://gslhub.com/research) · [Publications](https://gslhub.com/publications) · [Contact](mailto:research@gslhub.com)
+[Website](https://gslhub.com) · [Research repository](https://github.com/gslhub/research) · [Platform source](https://github.com/gslhub/website) · [Brand assets](https://github.com/gslhub/branding) · [Contact](mailto:research@gslhub.com)
 
 </div>
 
@@ -37,46 +37,69 @@ GSLHub currently focuses on:
 - **Reproducible research** — preserving execution context, methodology and research outputs so results can be independently reviewed.
 - **Open technological innovation** — turning research infrastructure, metrics and software into reusable public resources.
 
-## Open research infrastructure
+## Public repositories
 
-Our main public repository is [`gslhub/website`](https://github.com/gslhub/website), which contains the GSLHub research platform and its public website.
+### [`gslhub/website`](https://github.com/gslhub/website)
 
-The platform includes infrastructure for:
+The public website and core research platform: experiment governance, execution tracking, evidence provenance, scientific metrics, research artifacts and reproducibility controls.
 
-- research projects and experiments;
-- prompt execution and execution-environment tracking;
-- evidence and research-artifact provenance;
-- scientific metrics and validation workflows;
-- datasets, publications, benchmarks and software outputs;
-- administrative research operations and reproducibility controls.
+**Stack:** `Next.js` · `TypeScript` · `React` · `Payload CMS` · `MongoDB` · `Tailwind CSS` · `Node.js` · `GitHub Actions`  
+**License:** `AGPL-3.0-only`
 
-### Core technology
+### [`gslhub/research`](https://github.com/gslhub/research)
 
-`Next.js` · `TypeScript` · `React` · `Payload CMS` · `MongoDB` · `Tailwind CSS` · `Node.js` · `GitHub Actions`
+The canonical methodological layer: research model, protocols, codebooks, governance, reproducibility requirements, reusable study templates and citation metadata.
+
+Current canonical materials include the **GSLHub Project Matrix**, the **first controlled GEO pilot protocol** and the **Observation & Citation Codebook**.
+
+**License:** `CC BY 4.0` for original research documentation unless otherwise stated.
+
+### [`gslhub/branding`](https://github.com/gslhub/branding)
+
+Approved GSLHub visual identity, light/dark logo variants, icon, palette and brand-usage guidance.
+
+Brand and trademark rights are handled separately from the software and research-documentation licenses.
+
+## Research architecture
+
+```text
+Scientific problem
+→ Hypothesis
+→ Experiment
+→ Controlled execution
+→ Preserved research artifact
+→ Evidence
+→ Observation
+→ Citation / Metric
+→ Reproducibility review
+→ Public dissemination
+```
+
+GSLHub treats metrics as traceable research outputs rather than isolated numbers. The methodological chain is maintained in [`gslhub/research`](https://github.com/gslhub/research), while the implementation and operational platform live in [`gslhub/website`](https://github.com/gslhub/website).
+
+## Repository roadmap
+
+| Area | Status | Purpose |
+|---|---|---|
+| [`website`](https://github.com/gslhub/website) | **Public** | Public site and core research platform |
+| [`research`](https://github.com/gslhub/research) | **Public** | Canonical protocols, methodology and codebooks |
+| [`branding`](https://github.com/gslhub/branding) | **Public** | Approved visual identity and usage guidance |
+| **datasets** | Preparing | Curated and documented research datasets |
+| **benchmarks** | Preparing | Evaluation frameworks and reproducible benchmarks |
+| **software** | Preparing | Reusable research software and technical tools |
+| **docs** | Preparing | Technical and operational documentation |
+
+Repositories are opened progressively when their contents are documented, licensed and ready for public reuse.
 
 ## Open science and licensing
 
-The GSLHub software platform is released under the **GNU Affero General Public License v3.0 (AGPL-3.0)**.
+GSLHub uses licenses by output type:
 
-This supports transparent inspection, modification and collaborative development while preserving source-code availability for modified versions offered over a network.
-
-Scientific publications, datasets, third-party materials and GSLHub brand assets may be governed by their own licenses or usage terms where indicated.
-
-## Repository structure
-
-GSLHub is being organized around several research and engineering streams:
-
-| Area | Purpose |
-|---|---|
-| **website** | Public site and core research platform |
-| **research** | Research protocols, experiments and study materials |
-| **datasets** | Curated and documented research datasets |
-| **benchmarks** | Evaluation frameworks and reproducible benchmarks |
-| **software** | Reusable research software and technical tools |
-| **docs** | Technical and methodological documentation |
-| **branding** | Brand guidelines and approved visual assets |
-
-Repositories are opened progressively when their contents are ready for public reuse and documentation.
+- **Research platform software:** GNU AGPL-3.0-only.
+- **Original research documentation:** Creative Commons Attribution 4.0 International (CC BY 4.0), unless otherwise stated.
+- **Datasets:** licensed individually according to provenance, rights and research constraints.
+- **Publications:** governed by their individual publication or publisher terms.
+- **Brand assets and trademarks:** governed separately; open-source or Creative Commons software/document licenses do not automatically grant trademark rights.
 
 ## Principles
 
@@ -93,6 +116,7 @@ We aim to build research that is:
 GSLHub is open to collaboration with researchers, developers, universities, AI practitioners and organizations interested in Generative Search, GEO, AI evaluation and reproducible research.
 
 **Website:** [gslhub.com](https://gslhub.com)  
+**Research:** [github.com/gslhub/research](https://github.com/gslhub/research)  
 **Email:** [research@gslhub.com](mailto:research@gslhub.com)  
 **GitHub:** [github.com/gslhub](https://github.com/gslhub)
 
@@ -102,11 +126,9 @@ GSLHub is open to collaboration with researchers, developers, universities, AI p
 
 **GSLHub — Generative Search Lab Hub** es una iniciativa independiente de investigación e infraestructura tecnológica abierta centrada en comprender cómo los sistemas de inteligencia artificial generativa **descubren, seleccionan, citan y recomiendan información**.
 
-Trabajamos especialmente en **Generative Search, Generative Engine Optimization (GEO), evaluación de sistemas de IA, evidencia gobernada y experimentación reproducible**.
+La metodología científica se mantiene de forma canónica en [`gslhub/research`](https://github.com/gslhub/research), mientras que [`gslhub/website`](https://github.com/gslhub/website) contiene la plataforma tecnológica que ejecuta, preserva, audita y mide el trabajo experimental.
 
-Nuestro objetivo es combinar investigación y desarrollo de software para que los experimentos sean **auditables, repetibles y útiles en entornos reales**.
-
-La plataforma principal de GSLHub es pública y puede consultarse en [`gslhub/website`](https://github.com/gslhub/website). El software se distribuye bajo licencia **GNU AGPL-3.0**.
+La documentación metodológica original se publica bajo **CC BY 4.0** salvo indicación contraria; el software principal utiliza **AGPL-3.0-only** y la identidad visual se gestiona por separado en [`gslhub/branding`](https://github.com/gslhub/branding).
 
 📍 Barcelona, España · 🌐 [gslhub.com](https://gslhub.com) · ✉️ [research@gslhub.com](mailto:research@gslhub.com)
 
