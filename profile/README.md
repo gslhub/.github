@@ -12,6 +12,8 @@
 
 **Barcelona, Spain · Open research · Open-source infrastructure**
 
+**English** · [Español](./README.es.md)
+
 [Website](https://gslhub.com) · [Research](https://github.com/gslhub/research) · [Benchmarks](https://github.com/gslhub/benchmarks) · [Software](https://github.com/gslhub/software) · [Docs](https://github.com/gslhub/docs) · [Contact](mailto:research@gslhub.com)
 
 </div>
@@ -135,16 +137,6 @@ GSLHub is open to collaboration with researchers, developers, universities, AI p
 **Email:** [research@gslhub.com](mailto:research@gslhub.com)
 
 ---
-
-## Español
-
-**GSLHub — Generative Search Lab Hub** es una iniciativa independiente de investigación e infraestructura tecnológica abierta centrada en comprender cómo los sistemas de IA generativa **descubren, seleccionan, citan y recomiendan información**.
-
-La metodología científica se mantiene en [`gslhub/research`](https://github.com/gslhub/research), las especificaciones reproducibles en [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), las implementaciones reutilizables en [`gslhub/software`](https://github.com/gslhub/software), la documentación transversal en [`gslhub/docs`](https://github.com/gslhub/docs) y la plataforma tecnológica en [`gslhub/website`](https://github.com/gslhub/website).
-
-La documentación metodológica y de benchmark original se publica bajo **CC BY 4.0** salvo indicación contraria; la plataforma y el software original utilizan **AGPL-3.0-only** y la identidad visual se gestiona de forma separada en [`gslhub/branding`](https://github.com/gslhub/branding).
-
-📍 Barcelona, España · 🌐 [gslhub.com](https://gslhub.com) · ✉️ [research@gslhub.com](mailto:research@gslhub.com)
 
 <div align="center">
 
