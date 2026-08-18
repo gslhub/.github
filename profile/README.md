@@ -12,7 +12,7 @@
 
 **Barcelona, Spain · Open research · Open-source infrastructure**
 
-[Website](https://gslhub.com) · [Research](https://github.com/gslhub/research) · [Benchmarks](https://github.com/gslhub/benchmarks) · [Docs](https://github.com/gslhub/docs) · [Source](https://github.com/gslhub/website) · [Contact](mailto:research@gslhub.com)
+[Website](https://gslhub.com) · [Research](https://github.com/gslhub/research) · [Benchmarks](https://github.com/gslhub/benchmarks) · [Software](https://github.com/gslhub/software) · [Docs](https://github.com/gslhub/docs) · [Contact](mailto:research@gslhub.com)
 
 </div>
 
@@ -41,7 +41,7 @@ Scientific problem
 → Public dissemination
 ```
 
-GSLHub treats metrics as traceable research outputs rather than isolated numbers. Scientific methodology lives in [`gslhub/research`](https://github.com/gslhub/research), benchmark specifications in [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), and the operational implementation in [`gslhub/website`](https://github.com/gslhub/website).
+GSLHub treats metrics as traceable research outputs rather than isolated numbers. Scientific methodology lives in [`gslhub/research`](https://github.com/gslhub/research), benchmark specifications in [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), reusable implementations in [`gslhub/software`](https://github.com/gslhub/software), and the governed operational platform in [`gslhub/website`](https://github.com/gslhub/website).
 
 ## Public repositories
 
@@ -64,6 +64,13 @@ Reproducible benchmark and metric specifications for Generative Search and GEO. 
 
 **License:** `CC BY 4.0` for original benchmark specifications and documentation.
 
+### [`gslhub/software`](https://github.com/gslhub/software)
+
+Reusable research software implementing independently testable parts of the GSLHub methodology. The first package, **`@gslhub/metrics-core` v0.1.0**, provides framework-independent deterministic AIR, CR, MCP and RCR calculations with exclusions, numerator/denominator data and SHA-256 audit checksums.
+
+**Stack:** `TypeScript` · `Node.js` · `npm workspaces` · `GitHub Actions`  
+**License:** `AGPL-3.0-only`
+
 ### [`gslhub/docs`](https://github.com/gslhub/docs)
 
 Cross-project public technical and institutional documentation covering architecture, repository boundaries, governance and safe-publication standards.
@@ -81,9 +88,9 @@ Approved GSLHub visual identity, light/dark logo variants, icon, palette and bra
 | [`website`](https://github.com/gslhub/website) | **Public** | Public site and core research platform |
 | [`research`](https://github.com/gslhub/research) | **Public** | Canonical protocols, methodology and codebooks |
 | [`benchmarks`](https://github.com/gslhub/benchmarks) | **Public** | Evaluation frameworks and reproducible metric specifications |
+| [`software`](https://github.com/gslhub/software) | **Public** | Reusable research software and deterministic metric implementations |
 | [`docs`](https://github.com/gslhub/docs) | **Public** | Technical and institutional documentation |
 | [`branding`](https://github.com/gslhub/branding) | **Public** | Approved visual identity and usage guidance |
-| **software** | Preparing | Standalone reusable research software; first package in development |
 | **datasets** | Preparing | Reviewed dataset releases with per-release licensing |
 
 Repositories are opened progressively only when their contents are documented, licensed and ready for public reuse.
@@ -97,7 +104,7 @@ Repositories are opened progressively only when their contents are documented, l
 | **MCP** | Mean Citation Position | When cited, how early does the target appear? |
 | **RCR** | Response Consistency Rate | How stable are controlled repetitions against a frozen baseline? |
 
-Metric methodology and software implementations are versioned independently so calculations can be audited against the specification used to produce a result.
+The normative specifications are versioned in [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), while reusable deterministic implementations are versioned independently in [`gslhub/software`](https://github.com/gslhub/software). This separation allows calculations to be tested against a frozen specification without coupling them to the application database or CMS.
 
 ## Open science and licensing
 
@@ -124,6 +131,7 @@ GSLHub is open to collaboration with researchers, developers, universities, AI p
 **Website:** [gslhub.com](https://gslhub.com)  
 **Research:** [github.com/gslhub/research](https://github.com/gslhub/research)  
 **Benchmarks:** [github.com/gslhub/benchmarks](https://github.com/gslhub/benchmarks)  
+**Software:** [github.com/gslhub/software](https://github.com/gslhub/software)  
 **Email:** [research@gslhub.com](mailto:research@gslhub.com)
 
 ---
@@ -132,9 +140,9 @@ GSLHub is open to collaboration with researchers, developers, universities, AI p
 
 **GSLHub — Generative Search Lab Hub** es una iniciativa independiente de investigación e infraestructura tecnológica abierta centrada en comprender cómo los sistemas de IA generativa **descubren, seleccionan, citan y recomiendan información**.
 
-La metodología científica se mantiene en [`gslhub/research`](https://github.com/gslhub/research), las especificaciones reproducibles en [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), la documentación transversal en [`gslhub/docs`](https://github.com/gslhub/docs) y la plataforma tecnológica en [`gslhub/website`](https://github.com/gslhub/website).
+La metodología científica se mantiene en [`gslhub/research`](https://github.com/gslhub/research), las especificaciones reproducibles en [`gslhub/benchmarks`](https://github.com/gslhub/benchmarks), las implementaciones reutilizables en [`gslhub/software`](https://github.com/gslhub/software), la documentación transversal en [`gslhub/docs`](https://github.com/gslhub/docs) y la plataforma tecnológica en [`gslhub/website`](https://github.com/gslhub/website).
 
-La documentación metodológica y de benchmark original se publica bajo **CC BY 4.0** salvo indicación contraria; el software principal utiliza **AGPL-3.0-only** y la identidad visual se gestiona de forma separada en [`gslhub/branding`](https://github.com/gslhub/branding).
+La documentación metodológica y de benchmark original se publica bajo **CC BY 4.0** salvo indicación contraria; la plataforma y el software original utilizan **AGPL-3.0-only** y la identidad visual se gestiona de forma separada en [`gslhub/branding`](https://github.com/gslhub/branding).
 
 📍 Barcelona, España · 🌐 [gslhub.com](https://gslhub.com) · ✉️ [research@gslhub.com](mailto:research@gslhub.com)
 
