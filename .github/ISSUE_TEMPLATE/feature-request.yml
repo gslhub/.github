@@ -1,0 +1,63 @@
+name: Feature request
+description: Propose a new capability, research workflow or infrastructure improvement.
+title: "[Feature] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this form for focused proposals. For major methodological changes, explain the research impact as clearly as the technical implementation.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or research need
+      description: What limitation, workflow or research question should this address?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the capability or change you propose.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Primary area
+      options:
+        - Research methodology
+        - Generative Search / GEO
+        - AI evaluation
+        - Evidence and provenance
+        - Benchmarks and metrics
+        - Dataset infrastructure
+        - CMS / research operations
+        - Public website / UX
+        - Developer tooling / CI
+        - Documentation
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Research or data impact
+      description: Explain whether this changes methodology, metrics, evidence, datasets, lifecycle rules or reproducibility controls. If none, say so.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Optional alternatives, tradeoffs or related work.
+    validations:
+      required: false
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope check
+      options:
+        - label: I have kept this proposal focused on one coherent capability or problem.
+          required: true
+        - label: This proposal does not require publishing credentials, private data or sensitive research material.
+          required: true
