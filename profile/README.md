@@ -1,6 +1,10 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/gslhub/website/main/public/brand/gslhub-logo.svg" alt="GSLHub" width="360" />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gslhub/website/main/public/brand/gslhub-logo-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gslhub/website/main/public/brand/gslhub-logo.svg">
+  <img src="https://raw.githubusercontent.com/gslhub/website/main/public/brand/gslhub-logo.svg" alt="GSLHub — Generative Search Lab Hub" width="360">
+</picture>
 
 # GSLHub
 
@@ -16,7 +20,7 @@
 
 ## About GSLHub
 
-**GSLHub** is an independent research initiative and open technological infrastructure focused on understanding how generative AI systems discover, select, cite and recommend information.
+**GSLHub — Generative Search Lab Hub** is an independent research initiative and open technological infrastructure focused on understanding how generative AI systems discover, select, cite and recommend information.
 
 Our work combines **Generative Search research, Generative Engine Optimization (GEO), AI evaluation, governed evidence, reproducible experimentation and software engineering**.
 
@@ -96,7 +100,7 @@ GSLHub is open to collaboration with researchers, developers, universities, AI p
 
 ## Español
 
-**GSLHub** es una iniciativa independiente de investigación e infraestructura tecnológica abierta centrada en comprender cómo los sistemas de inteligencia artificial generativa **descubren, seleccionan, citan y recomiendan información**.
+**GSLHub — Generative Search Lab Hub** es una iniciativa independiente de investigación e infraestructura tecnológica abierta centrada en comprender cómo los sistemas de inteligencia artificial generativa **descubren, seleccionan, citan y recomiendan información**.
 
 Trabajamos especialmente en **Generative Search, Generative Engine Optimization (GEO), evaluación de sistemas de IA, evidencia gobernada y experimentación reproducible**.
 
